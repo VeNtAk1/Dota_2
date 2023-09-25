@@ -11,15 +11,18 @@
     padding: 34px 30px;
 }
 .container_news {
-    margin: 72px;
+    margin: 0 50px;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.24);
-    width: 90%;
+    width: 95%;
     transform: rotate(0.021deg);
     flex-shrink: 0;
     height: auto;
+    padding-bottom: 10px;
 }
+
 .title_container_news {
+    padding-top: 10px;
     color: #000;
     text-align: center;
     font-family: Inter;
@@ -30,6 +33,7 @@
     letter-spacing: 1.65px;
 }
 .text_container_news {
+    margin: 15px 50px;
     color: #000;
     font-family: Inter;
     font-size: 18px;
@@ -39,6 +43,103 @@
     letter-spacing: 1.1px;
     mix-blend-mode: hard-light;
 }
+@media screen and (max-width: 864px) {
+    .conteiner {
+        max-width: 730px;
+    }
+    .container_news {
+        max-width: 700px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .text_container_news {
+        font-size: 12px;
+        max-width: 100%;
+    }
+    .link_nav {
+        font-size: 15px;
+    }
+    .burger {
+        display: block;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
+    .burger_line {
+        border-radius: 100px;
+    }
+    .nav {
+        display: none;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .item_galereya {
+        width: 50%;
+    }
+    .container_footer {
+        flex-direction: column;
+    }
+    .footerlist_info {
+        margin-bottom: 15px;
+    }
+    .footer_info:first-child .link_podval {
+        padding-left: 0;
+    }
+    .instrument {
+        display: none;
+    }
+}
 @media screen and (max-width: 460px) {
-
+    .news {
+        max-width: 360px;
+    }
+    .conteiner {
+        max-width: 375px;
+    }
+    .container_news {
+        max-width: 95%;
+        margin-top: 0;
+        margin-bottom: 10px;
+        margin-left: 10%;
+    }
+    .title_section_news {
+        padding-top: 10px;
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+    .text_container_news {
+        font-size: 16px;
+        max-width: 100%;
+        margin-left: 10px;
+        margin-right: 5px;
+        flex-direction: column;
+    }
+    .burger {
+        display: block;
+        margin-right: 0;
+    }
+    .burger_line {
+        border-radius: 100px;
+    }
+    .nav {
+        display: none;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .item_galereya {
+        width: 50%;
+    }
+    .container_footer {
+        flex-direction: column;
+    }
+    .footerlist_info {
+        margin-bottom: 15px;
+    }
+    .footer_info:first-child .link_podval {
+        padding-left: 0;
+    }
+    .instrument {
+        display: none;
+    }
 }
